@@ -22,7 +22,7 @@ import {
 import axios from 'axios';
 
 const LandingPage = () => {
-  const [demoText, setDemoText] = useState('Severe crater on 4th avenue near metro station damaged my car tire');
+  const [demoText, setDemoText] = useState('Severe crater on Vijayawada Benz Circle NH-16 damaged my car tire near flyover');
   const [nlpResult, setNlpResult] = useState(null);
   const [nlpLoading, setNlpLoading] = useState(false);
 
@@ -109,7 +109,7 @@ const LandingPage = () => {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-[#00F2FE]/40 text-xs font-mono text-slate-200 shadow-glow-sm">
             <span className="w-2 h-2 rounded-full bg-[#00F2FE] animate-pulse"></span>
-            <span>URBANPULSE 2.0 • AUTONOMOUS INFRASTRUCTURE OBSERVABILITY</span>
+            <span>URBANPULSE AP • ANDHRA PRADESH STATE INFRASTRUCTURE OBSERVABILITY</span>
           </div>
 
           {/* Heading */}
@@ -141,7 +141,7 @@ const LandingPage = () => {
               className="px-6 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-white font-semibold text-sm sm:text-base border border-slate-700 hover:border-[#00F2FE]/50 transition-all flex items-center space-x-2"
             >
               <MapPin className="w-5 h-5 text-[#00F2FE]" />
-              <span>Explore Live City Map</span>
+              <span>Explore Live Andhra Pradesh Map</span>
             </Link>
           </div>
 

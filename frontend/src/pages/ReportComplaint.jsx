@@ -43,10 +43,10 @@ const ReportComplaint = () => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState('road_damage');
-  const [ward, setWard] = useState('Ward 12 - Civic District');
-  const [address, setAddress] = useState('Outer Ring Rd, Sector 14');
-  const [landmark, setLandmark] = useState('');
-  const [position, setPosition] = useState([28.6145, 77.2104]);
+  const [ward, setWard] = useState('VMC Ward 14 - Benz Circle Zone, Vijayawada');
+  const [address, setAddress] = useState('Benz Circle NH-16, MG Road, Vijayawada');
+  const [landmark, setLandmark] = useState('Opposite Jyothi Mall & Flyover Pillar 18');
+  const [position, setPosition] = useState([16.5062, 80.6480]);
 
   const [selectedFile, setSelectedFile] = useState(null);
   const [imagePreview, setImagePreview] = useState('');
@@ -254,12 +254,14 @@ const ReportComplaint = () => {
                   onChange={(e) => setWard(e.target.value)}
                   className="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-slate-100 focus:outline-none focus:border-[#00F2FE]"
                 >
-                  <option value="Ward 12 - Civic District">Ward 12 - Civic District</option>
-                  <option value="Ward 8 - Commerce Hub">Ward 8 - Commerce Hub</option>
-                  <option value="Ward 15 - Riverside Basin">Ward 15 - Riverside Basin</option>
-                  <option value="Ward 5 - West End">Ward 5 - West End</option>
-                  <option value="Ward 2 - Heritage Quarter">Ward 2 - Heritage Quarter</option>
-                  <option value="Ward 9 - Outer Industrial">Ward 9 - Outer Industrial</option>
+                  <option value="VMC Ward 14 - Benz Circle Zone, Vijayawada">VMC Ward 14 - Benz Circle Zone, Vijayawada</option>
+                  <option value="GVMC Ward 21 - RK Beach Coastal Zone, Visakhapatnam">GVMC Ward 21 - RK Beach Coastal Zone, Visakhapatnam</option>
+                  <option value="GMC Ward 9 - Brodipet Central, Guntur">GMC Ward 9 - Brodipet Central, Guntur</option>
+                  <option value="TMC Ward 4 - Alipiri Pilgrim Corridor, Tirupati">TMC Ward 4 - Alipiri Pilgrim Corridor, Tirupati</option>
+                  <option value="KMC Ward 11 - C-Camp District, Kurnool">KMC Ward 11 - C-Camp District, Kurnool</option>
+                  <option value="RMC Ward 6 - Danavaipeta Zone, Rajahmundry">RMC Ward 6 - Danavaipeta Zone, Rajahmundry</option>
+                  <option value="KMC Ward 8 - Port Road, Kakinada">KMC Ward 8 - Port Road, Kakinada</option>
+                  <option value="NMC Ward 5 - Trunk Road, Nellore">NMC Ward 5 - Trunk Road, Nellore</option>
                 </select>
               </div>
             </div>
@@ -391,6 +393,9 @@ const ReportComplaint = () => {
               <MapContainer
                 center={position}
                 zoom={14}
+                minZoom={7}
+                maxBounds={[[12.4, 76.6], [19.3, 84.9]]}
+                maxBoundsViscosity={1.0}
                 className="w-full h-full"
                 scrollWheelZoom={false}
               >
