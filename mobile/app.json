@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "UrbanPulse",
+    "slug": "urbanpulse",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0B132B"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "io.urbanpulse.mobile",
+      "infoPlist": {
+        "NSCameraUsageDescription": "UrbanPulse requires camera access to capture photographs of road potholes, garbage accumulation, and municipal infrastructure damage.",
+        "NSLocationWhenInUseUsageDescription": "UrbanPulse requires your GPS location to tag the exact coordinates of reported civic incidents."
+      }
+    },
+    "android": {
+      "package": "io.urbanpulse.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B132B"
+      },
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    }
+  }
+}
