@@ -37,3 +37,9 @@ backend/uploads/*
 # OS generated
 .DS_Store
 Thumbs.db
+
+# Excluded files
+python-ai/yolov8n.pt
+urbanpulse-complete-upgrade.zip
+urbanpulse-complete-upgrade/
+.vscode/
